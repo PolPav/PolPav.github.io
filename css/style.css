@@ -407,6 +407,9 @@ ul.callbacks_tabs.callbacks1_tabs {
 	z-index: 999;
 	left: 45%;
 }
+.banner{
+    margin-top: 130px;
+}
 .banner-mat{
 	padding:0;
 }
