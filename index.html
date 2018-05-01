@@ -47,7 +47,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!--header-->
-<div class="header">
+<div class="header" id="header">
 	<div class="header-top">
 		<div class="container">
 			<div class="col-sm-4 logo animated wow fadeInLeft" data-wow-delay=".5s">
@@ -146,6 +146,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 				</nav>
 			</div>
+			       <script>
+                var headerHeight = 0;
+                var headerHidden = 0;
+
+                $(function(){
+                    var elem = $('#header');
+                    var top = $(this).scrollTop();
+
+                    if(top > headerHeight){
+                        elem.css('top', headerHidden);
+                    }
+
+                    $(window).scroll(function(){
+                        top = $(this).scrollTop();
+
+                        if (top+headerHidden < headerHeight) {
+                            elem.css('top', (headerHeight-top));
+
+                        } else {
+                            elem.css('top', headerHidden);
+                        }
+                    });
+                });
+            </script>
 			<!--<script>-->
 			<!--$(document).ready(function(){-->
 			<!--$(".dropdown").hover(-->
