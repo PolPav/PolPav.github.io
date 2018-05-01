@@ -30,6 +30,14 @@ h1,h2,h3,h4,h5,h6,label,p{
 .logo span {
     color: mediumvioletred;
 }
+#header {
+    top: 0px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: white;
+}
 .header-top {
     padding: 15px 0;
     border-bottom: 1px solid #d0d0d0;
